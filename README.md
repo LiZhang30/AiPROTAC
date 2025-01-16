@@ -1,6 +1,6 @@
 # 项目名称
 
-<img src="https://github.com/你的用户名/my-repo/blob/main/images/cover.jpg?raw=true" alt="封面图片" width="100%" />
+<img src="https://github.com/LiZhang30/AiPROTAC/blob/main/images/cover.tiff?raw=true" alt="封面图片" width="100%" />
 
 ## 简介
 
