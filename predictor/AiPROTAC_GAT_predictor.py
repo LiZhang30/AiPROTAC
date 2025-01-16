@@ -86,11 +86,8 @@ def main(args):
                              lx = BLgraph.ndata['x'].to(args.device),
                         )
 
-            #y_score是实际预测概率
             y_score = y_score + th.nn.functional.softmax(pred,1)[:,1].cpu().tolist()
-            #y_pred是实际预测类别
             y_pred = y_pred + th.max(pred,1)[1].cpu().tolist()
-            #y_true是先验类别
             y_true = y_true + Tlabels.cpu().tolist()
 
             iteration += 1
