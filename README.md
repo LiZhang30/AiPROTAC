@@ -1,6 +1,6 @@
 # AiPROTAC
 
-<img src="https://raw.githubusercontent.com/LiZhang30/AiPROTAC/blob/main/images/cover.png?raw=true" alt="封面" width="60%" />
+<img src="https://raw.githubusercontent.com/LiZhang30/AiPROTAC/blob/main/images/cover.png?raw=true" alt="Cover" width="60%" />
 
 ## Brief Introduction
 
