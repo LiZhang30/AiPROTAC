@@ -1,4 +1,4 @@
-# AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrader Design
+# AiPROTAC
 
 <img src="https://github.com/LiZhang30/AiPROTAC/blob/main/images/cover.png?raw=true" alt="封面" width="100%" />
 
