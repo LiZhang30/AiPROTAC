@@ -17,7 +17,6 @@ def one_of_k_encoding_unk(x, allowable_set):
         x = allowable_set[-1]
     return list(map(lambda s: x == s, allowable_set))
 
-#Get features of an atom (one-hot encoding: 元素、杂化类型、原子参与成键数:度、H离子数、隐式H离子数、是否在环上、是否芳环)
 '''1.atom element: 44 dimensions (43种+其它:Unknown)       2.the atom's hybridization: 5 dimensions
    3.degree of atom: 6 dimensions                         4.total number of H bound to atom: 6 dimensions
    5.number of implicit H bound to atom: 6 dimensions     6.whether the atom is on ring: 1 dimension
@@ -27,7 +26,7 @@ AtomTable = ['C', 'N', 'O', 'S', 'F', 'Si', 'P', 'Cl', 'Br', 'Mg',
              'Na', 'Ca', 'Fe', 'As', 'Al', 'I', 'B', 'V', 'K', 'Tl',
              'Yb', 'Sb', 'Sn', 'Ag', 'Pd', 'Co', 'Se', 'Ti', 'Zn', 'H',
              'Li', 'Ge', 'Cu', 'Au', 'Ni', 'Cd', 'In', 'Mn', 'Zr', 'Cr',
-             'Pt', 'Hg', 'Pb', 'Unknown'] #Unknown表示其它元素
+             'Pt', 'Hg', 'Pb', 'Unknown']
 
 def GetAtomFeatures(atom):
     #print(atom.GetSymbol())
@@ -55,8 +54,7 @@ def GetAtomFeatures(atom):
 
     return OneHot_AllFeatures
 
-#Get features of an edge (one-hot encoding: 单键/双键/三键/成环、芳香环、共轭:
-#π-π共轭:指两个及以上双键(或三键)以单键相联结时所发生的电子的离位作用)
+#Get features of an edge
 '''1.single/double/triple/aromatic: 4 dimensions        2.π-π: 1 dimensions
    3.whether the bond is on ring: 1 dimension           Total: 6 dimensions'''
 
@@ -98,7 +96,7 @@ def SmileToGraph(smile):
                 bond_features_ij = GetBondFeatures(bond_ij)
                 edge_features.append(bond_features_ij)
 
-    G.ndata['x'] = th.from_numpy(np.array(node_features)).to(th.float32) #dgl添加原子/节点特征
-    G.edata['w'] = th.from_numpy(np.array(edge_features)).to(th.float32) #dgl添加键/边特征
+    G.ndata['x'] = th.from_numpy(np.array(node_features)).to(th.float32)
+    G.edata['w'] = th.from_numpy(np.array(edge_features)).to(th.float32)
 
     return G
