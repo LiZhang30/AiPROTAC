@@ -1,0 +1,12 @@
+{
+    "PROTAC_node_dim": 69,
+    "PROTAC_edge_dim": 6,
+    "protein_node_dim": 33,
+    "protein_edge_dim": 2,
+    "node_hidden_dim": 128,
+    "node_out_dim": 128,
+    "PROTAC_vocab": 62,
+    "protein_vocab": 25,
+    "dropout_ratio": 0.1, 
+    "classifier_dim": 2
+}
