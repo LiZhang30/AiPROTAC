@@ -13,25 +13,25 @@ def ShowGraph(graph, nodeLabel):
     pos = nx.spring_layout(G)
     nx.draw(G, pos, edge_color="black", node_size=500, with_labels=True) #画图，设置节点大小
 
-    node_data = nx.get_node_attributes(G, nodeLabel) #获取节点的desc属性
+    node_data = nx.get_node_attributes(G, nodeLabel)
     node_labels = {index: "N:" + str(data) for index, data in
-                   enumerate(node_data)} #重新组合数据， 节点标签是dict, {nodeid:value,nodeid2,value2} 这样的形式
+                   enumerate(node_data)}
     pos_higher = {}
 
-    for k, v in pos.items(): #调整下顶点属性显示的位置，不要跟顶点的序号重复了
+    for k, v in pos.items():
         if (v[1] > 0):
             pos_higher[k] = (v[0]-0.04, v[1]+0.04)
         else:
             pos_higher[k] = (v[0]-0.04, v[1]-0.04)
-    nx.draw_networkx_labels(G, pos_higher, labels=node_labels, font_color="brown", font_size=12) #将desc属性，显示在节点上
+    nx.draw_networkx_labels(G, pos_higher, labels=node_labels, font_color="brown", font_size=12)
 
 
-    '''edge_labels = nx.get_edge_attributes(G, EdgeLabel)  #获取边的weights属性，
+    '''edge_labels = nx.get_edge_attributes(G, EdgeLabel)
 
     edge_labels = {(key[0], key[1]): "w:" + str(edge_labels[key].item()) for key in
-                   edge_labels}  # 重新组合数据， 边的标签是dict, {(nodeid1,nodeid2):value,...} 这样的形式
+                   edge_labels}
     nx.draw_networkx_edges(G, pos, alpha=0.5)
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=12)  # 将Weights属性，显示在边上
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=12)
 
     print(G.edges.data())'''
     plt.show()
@@ -67,7 +67,6 @@ def detect_graph(graphs):
 
             subgraphs.append(subgraph)
 
-        #设置为>1表示只删除孤立结点，设置为>5表示删除结点个数小于5的所有孤立簇
         large_subgraphs = [subgraph for subgraph in subgraphs if len(subgraph)>2]
         merged_graph = nx.compose_all(large_subgraphs)
         dgl_graph = dgl.from_networkx(merged_graph)
@@ -78,29 +77,23 @@ def detect_graph(graphs):
 
 '''
 from dgl import save_graphs
-#创建一个简单的图
 edges = [(0, 1), (1, 2), (3, 4)]
 g = dgl.graph(edges, num_nodes=5)
 g.ndata['label'] = th.tensor([0, 1, 0, 1, 1])
 g.ndata['h'] = th.randn((5, 6))
 
-# 将DGL图转换为NetworkX图
 nx_graph = g.to_networkx(node_attrs=['h', 'label']).to_undirected()  #
 print(nx_graph)
-print("是否连通：", nx.is_connected(nx_graph))
-print("连通图的个数", nx.number_connected_components(nx_graph))
 
 subgraphs = []
 for nodes in nx.connected_components(nx_graph):
     subgraph = nx_graph.subgraph(nodes)
     subgraphs.append(subgraph)
 
-# 设置为>1表示只删除孤立结点，设置为>5表示删除结点个数小于5的所有孤立簇
 large_subgraphs = [subgraph for subgraph in subgraphs if len(subgraph) > 2]
 merged_graph = nx.compose_all(large_subgraphs)
 print(merged_graph)
 
-# 将NetworkX图转换为DGL图并保存
 dgl_graph = dgl.from_networkx(merged_graph, node_attrs=['h', 'label'])  #
 print(dgl_graph)
 save_graphs('/your_path/graph.name.bin', dgl_graph)
