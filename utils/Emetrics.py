@@ -106,7 +106,6 @@ def get_PCC(X, Y):
     return r
 
 
-#载入数据
 y_true1 = np.loadtxt('./y_true1.txt', dtype=int).tolist()
 '''y_true2 = np.loadtxt('./y_true2.txt', dtype=int).tolist()
 y_true3 = np.loadtxt('./y_true3.txt', dtype=int).tolist()
@@ -127,7 +126,6 @@ y_AiPROTACs_RgraphCL = np.loadtxt('./y_score1_AiPROTACs-Rattention.txt', dtype=f
 y_AiPROTACs = np.loadtxt('./y_score1_AiPROTACs.txt', dtype=float).tolist()
 
 
-#计算AUC值
 fpr1, tpr1, thread1 = metrics.roc_curve(y_true1, y_RF_MACCS)
 roc_auc1 = metrics.auc(fpr1, tpr1)
 
@@ -162,7 +160,6 @@ fpr11, tpr11, thread11 = metrics.roc_curve(y_true1, y_AiPROTACs)
 roc_auc11 = metrics.auc(fpr11, tpr11)
 
 '''
-#绘制ROC曲线
 plt.figure()
 lw = 1
 plt.plot(fpr1, tpr1, color='olive', lw=2, label='RF-MACCS (area=%0.4f)'%roc_auc1)
@@ -188,13 +185,10 @@ plt.savefig('auc-roc.pdf', )
 plt.show()
 
 '''
-#载入数据
 #y_true = np.loadtxt('./y_true.txt', dtype=int).tolist()
 #y_score1 = np.loadtxt('./y_score1.txt', dtype=float).tolist()
 #y_score2 = np.loadtxt('./y_score2.txt', dtype=float).tolist()
 
-
-#计算AUC值
 precision1, recall1, _ = metrics.precision_recall_curve(y_true1, y_RF_MACCS)
 roc_pr1 = metrics.auc(recall1, precision1)
 
@@ -228,7 +222,6 @@ roc_pr10 = metrics.auc(recall10, precision10)
 precision11, recall11, _ = metrics.precision_recall_curve(y_true1, y_AiPROTACs)
 roc_pr11 = metrics.auc(recall11, precision11)
 
-#绘制PR曲线
 plt.figure()
 lw = 1
 plt.plot(recall1, precision1, color='olive', lw=2, label='RF-MACCS (area=%0.4f)'%roc_pr1)
