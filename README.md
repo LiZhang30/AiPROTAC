@@ -1,4 +1,4 @@
-# 项目名称
+# AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrader Design
 
 <img src="https://github.com/LiZhang30/AiPROTAC/blob/main/images/cover.tiff?raw=true" alt="封面图片" width="100%" />
 
