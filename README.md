@@ -4,7 +4,7 @@
 
 ## Brief Introduction
 
-这里是项目的简介内容。
+AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrader Design
 
 ## 功能
 
