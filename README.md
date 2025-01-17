@@ -27,22 +27,22 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Datasets
 
-Commands to Obtain Pocket Data Using PyMOL:
+Commands to Obtain Protein Pockets Using PyMOL:
 <br> 1. fetch (PDB ID)  # Fetch protein from the PDB database.
-remove solvent  # Remove solvents.
-remove sele  # Remove the selected extra ligands.
-button operation  # Extract the target ligand and rename it as obj01.
-zoom obj01, animate=1  # Zoom in on the selected part.
-bg_color white  # Set the background color to white.
-set cartoon_transparency, 0.8  # Adjust the transparency of the cartoon (or other surfaces).
-sele obj01 around 5  # Select atoms within 5 Å of the ligand.
-zoom sele, animate=1  # Zoom in on the selected residue.
-select byres sele  # Select the residues associated with the ligand.
-button operation  # Manually extract the selected pocket residues, rename it as obj02, and display as sticks.
-button operation  # Manually color the ligand.
-zoom obj02, animate=1  # Zoom in on the pocket.
-button operation  # Manually visualize the pocket.
-Save the pdb file of the protein pocket  # Save the pocket’s PDB file.
+<br> 2. remove solvent  # Remove solvents.
+<br> 3. remove sele  # Remove the selected extra ligands.
+<br> 4. button operation  # Extract the target ligand and rename it as obj01.
+<br> 5. zoom obj01, animate=1  # Zoom in on the selected part.
+<br> 6. bg_color white  # Set the background color to white.
+<br> 7. set cartoon_transparency, 0.8  # Adjust the transparency of the cartoon (or other surfaces).
+<br> 8. sele obj01 around 5  # Select atoms within 5 Å of the ligand.
+<br> 9. zoom sele, animate=1  # Zoom in on the selected residue.
+<br> 10. select byres sele  # Select the residues associated with the ligand.
+<br> 11. button operation  # Manually extract the selected pocket residues, rename it as obj02, and display as sticks.
+<br> 12. button operation  # Manually color the ligand.
+<br> 13. zoom obj02, animate=1  # Zoom in on the pocket.
+<br> 14. button operation  # Manually visualize the pocket.
+<br> 15. Save the pdb file of the protein pocket  # Save the pocket’s PDB file.
 
 ## Usage
 
