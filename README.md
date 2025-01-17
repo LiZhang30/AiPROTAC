@@ -23,6 +23,8 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 <br> 4. Set up RDKit environment: 2019 version
 <br> conda install -c conda-forge/label/cf202003 rdkit
 
+- Notes: For more dependencies, please refer to 
+
 ## Datasets
 
 Commands to Obtain Pocket Data Using PyMOL:
