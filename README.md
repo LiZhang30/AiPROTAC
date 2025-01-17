@@ -8,8 +8,11 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Features
 
-- Feature 1
-- Feature 2
+- A virtual screening tool for PROTAC-targeted degradation prediction.
+- Applied this tool to design AR degraders, leading to the identification of the lead compound GT19.
+- Integrated both supervised and unsupervised learning frameworks, offering a reference for drug discovery tasks with limited labeled data but high predictive demand.
+- Curated the PROTAC-ZL dataset manually.
+- Preprocessed data from PROTAC-DB and PROTAC-ZL, ready for developing new PROTAC-targeted degradation prediction tools.
 
 ## Installation
 
