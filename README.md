@@ -1,7 +1,7 @@
 # AiPROTAC
 
-<img src="https://raw.github.com/LiZhang30/AiPROTAC/blob/main/images/cover.png?raw=true" alt="Cover" width="60%" />
-- ![Cover](https://raw.githubusercontent.com/LiZhang30/AiPROTAC/main/images/cover.png)
+![Cover](https://raw.githubusercontent.com/LiZhang30/AiPROTAC/main/images/cover.png)
+
 ## Brief Introduction
 
 AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrader Design
