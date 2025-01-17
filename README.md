@@ -18,7 +18,7 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 <br> conda create -n gnn_gpu python=3.7
 <br> 2. Set up PyTorch environment: Linux CUDA 11.7
 <br> conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-<br> 3. Set up DGL environment: CUDA 11.7, Package Conda(Stable), Linux, Python version 3.7
+<br> 3. Set up DGL environment: CUDA 11.7, Package Conda (Stable), Linux, Python version 3.7
 <br> conda install -c dglteam dgl-cuda11.7
 <br> 4. Set up RDKit environment: 2019 version
 <br> conda install -c conda-forge/label/cf202003 rdkit
