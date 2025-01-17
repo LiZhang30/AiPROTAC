@@ -53,7 +53,7 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Usage
 
-使用方法说明...
+- For training and testing AiPROTAC and its baselines, please refer to the scripts in this project.
 
 ## License
 
