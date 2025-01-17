@@ -30,6 +30,10 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Datasets
 
+- PROTAC-DB 2.0 and PROTAC-ZL datasets
+<br> 1. PROTAC-DB 2.0: In this research, after a series of preprocessing steps on the raw data, we obtained the PROTAC-DB 2.0 dataset used herein.
+<br> 2. PROTAC-ZL: 
+
 - Commands to Obtain Protein Pockets Using PyMOL:
 <br> 1. fetch (PDB ID)  # Fetch protein from the PDB database.
 <br> 2. remove solvent  # Remove solvents.
