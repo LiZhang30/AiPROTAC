@@ -13,7 +13,7 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Installation
 
-- Main Requirements (CUDA version 11.7):
+- Main Requirements:
 <br> 1. Create a virtual environment 
 <br> conda create -n gnn_gpu python=3.7
 <br> 2. Set up PyTorch environment: Linux CUDA 11.7
@@ -23,7 +23,7 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 <br> 4. Set up RDKit environment: 2019 version
 <br> conda install -c conda-forge/label/cf202003 rdkit
 
-- Notes: For more dependencies, please refer to 
+- Notes: For more dependencies, please refer to [environment.yml](environment)
 
 ## Datasets
 
