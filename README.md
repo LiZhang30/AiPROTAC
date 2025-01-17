@@ -28,8 +28,8 @@ CUDA version 11.7
 
 ## Datasets
 
-PyMOL software:
-fetch (PDB ID)  # Fetch protein from the PDB database.
+Commands to Obtain Pocket Data Using PyMOL:
+<br> 1. fetch (PDB ID)  # Fetch protein from the PDB database.
 remove solvent  # Remove solvents.
 remove sele  # Remove the selected extra ligands.
 button operation  # Extract the target ligand and rename it as obj01.
