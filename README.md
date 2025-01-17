@@ -27,7 +27,7 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Datasets
 
-Commands to Obtain Protein Pockets Using PyMOL:
+- Commands to Obtain Protein Pockets Using PyMOL:
 <br> 1. fetch (PDB ID)  # Fetch protein from the PDB database.
 <br> 2. remove solvent  # Remove solvents.
 <br> 3. remove sele  # Remove the selected extra ligands.
