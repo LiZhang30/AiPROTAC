@@ -31,8 +31,8 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 ## Datasets
 
 - PROTAC-DB 2.0 and PROTAC-ZL datasets
-<br> 1. PROTAC-DB 2.0: In this research, after a series of preprocessing steps on the raw data, we obtained the PROTAC-DB 2.0 dataset used herein.
-<br> 2. PROTAC-ZL: 
+<br> 1. The data, which is ready for model training and testing, is stored in the "data" folder of this project.
+<br> 2. We provide all raw data, including FASTA sequences, SMILES, and protein structures. Users can easily construct molecular graphs using the processing code we offer. The data processing scripts are available in DataHelper.py, DrugGraph.py, and TargetGraph.py within this project.
 
 - Commands to Obtain Protein Pockets Using PyMOL:
 <br> 1. fetch (PDB ID)  # Fetch protein from the PDB database.
