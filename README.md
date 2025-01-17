@@ -13,7 +13,7 @@ AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrad
 
 ## Installation
 
-Create a virtual environment:
+Main Requirements:
 
 conda create -n gnn_gpu python=3.7
 Set up PyTorch environment: Linux CUDA 11.7
