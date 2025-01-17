@@ -34,11 +34,14 @@ CUDA version 11.7
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
 
-You may use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, provided that the following conditions are met:
-- The above copyright notice and this permission notice must be included in all copies or substantial portions of the Software.
-- The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
-- In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+You may use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
+
+- You must provide a copy of this license in any distribution of the Software.
+- You must provide a prominent notice stating that you have changed the files, if applicable.
+- You may not use the trademarks, service marks, or other identifiers of the copyright holders, except as required by the license.
+
+The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 
 For more details, see the full license in the [LICENSE](LICENSE) file.
