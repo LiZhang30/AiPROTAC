@@ -1,6 +1,8 @@
 # AiPROTAC
 
-![Cover](https://raw.githubusercontent.com/LiZhang30/AiPROTAC/main/images/cover.png)
+##![Cover](https://raw.githubusercontent.com/LiZhang30/AiPROTAC/main/images/cover.png)
+<img src="https://raw.githubusercontent.com/LiZhang30/AiPROTAC/main/images/cover.png" alt="Cover" width="60%" />
+
 
 ## Brief Introduction
 
