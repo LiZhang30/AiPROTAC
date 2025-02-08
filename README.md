@@ -4,7 +4,7 @@
 
 ## Brief Introduction
 
-AiPROTAC for PROTAC-targeted Degradation Prediction and Androgen Receptor Degrader Design
+Predicting PROTAC-targeted Degradation and Designing Androgen Receptor Degraders with AiPROTAC
 
 ## Features
 
